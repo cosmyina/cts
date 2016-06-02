@@ -12,7 +12,7 @@ public class Autoturism extends InterfataVehicul implements IAutoturism{
 	SenzoriDeParcare senzoriDeParcare;
 	
 	public Autoturism() {
-		super(null, null);
+		super("marca", "model");
 		this.tipClimatizare = null;
 		this.infoLansariAuto = null;
 		computerDeBord = new ComputerDeBord();
@@ -27,7 +27,7 @@ public class Autoturism extends InterfataVehicul implements IAutoturism{
 	}
 	
 	public Autoturism(String info) {
-		super(null, null);
+		super("marca", "model");
 		this.infoLansariAuto = info;
 	}
 

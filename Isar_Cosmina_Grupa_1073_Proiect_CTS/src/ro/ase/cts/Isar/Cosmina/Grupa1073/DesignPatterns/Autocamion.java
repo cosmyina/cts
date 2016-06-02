@@ -7,7 +7,7 @@ public class Autocamion extends InterfataVehicul implements IAutocamion{
 	private IStareAutocamion stareCurenta;
 
 	public Autocamion() {
-		super(null, null);
+		super("marca", "marca");
 		this.tipAC = null;
 		stareCurenta = new AutocamionNou();
 	}

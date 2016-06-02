@@ -5,7 +5,7 @@ public class Motocicleta extends InterfataVehicul implements IMotocicleta{
 	private String numeMoto = null;
 	
 	public Motocicleta(final String numeMoto) {
-		super(null, null);
+		super("marca", "model");
 		this.numeMoto = numeMoto;
 		incarcaMotoConcurs();
 	}

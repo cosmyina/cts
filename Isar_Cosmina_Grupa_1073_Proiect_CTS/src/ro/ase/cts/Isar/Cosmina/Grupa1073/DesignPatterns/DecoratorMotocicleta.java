@@ -5,7 +5,7 @@ public class DecoratorMotocicleta extends InterfataMotocicleta{
 	protected final InterfataMotocicleta moto;
 	
 	public DecoratorMotocicleta(InterfataMotocicleta moto) {
-		super(null, null);
+		super("marca", "model");
 		this.moto = moto;
 	}
 
