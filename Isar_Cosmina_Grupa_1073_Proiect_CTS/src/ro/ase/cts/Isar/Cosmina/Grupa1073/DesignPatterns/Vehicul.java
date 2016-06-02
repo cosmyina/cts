@@ -47,11 +47,23 @@ public class Vehicul {
 		
 		public VehiculBuilder(String marca, String model) {
 			this.vehicul = new Vehicul();
+			
+			if(marca == null)
+				throw new UnsupportedOperationException();
 			this.vehicul.marca = marca;
+			
+			if(model == null)
+				throw new UnsupportedOperationException();
 			this.vehicul.model = model;
 		}
 		
 		public VehiculBuilder adaugaPret(float pret) {
+			if(pret == 0)
+				throw new UnsupportedOperationException();
+			else if(pret <= 10000)
+				throw new UnsupportedOperationException();
+			else if(pret >= 15000000)
+				throw new UnsupportedOperationException();
 			this.vehicul.pret = pret;
 			return this;
 		}
@@ -62,6 +74,12 @@ public class Vehicul {
 		}
 		
 		public VehiculBuilder adaugaCapacitateCilindrica(int capacitateCilindrica) {
+			if(capacitateCilindrica == 0)
+				throw new UnsupportedOperationException();
+			else if(capacitateCilindrica <= 1000)
+				throw new UnsupportedOperationException();
+			else if(capacitateCilindrica >= 9000)
+				throw new UnsupportedOperationException();
 			this.vehicul.capacitateCilindrica = capacitateCilindrica;
 			return this;
 		}
